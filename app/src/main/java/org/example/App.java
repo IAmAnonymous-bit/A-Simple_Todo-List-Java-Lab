@@ -22,6 +22,8 @@ public class App {
     System.out.println(myList.all());
     System.out.println(myList.complete());
     System.out.println(myList.incomplete());
+    myList.clear();
+    System.out.println(myList.all());
 
   }
 }

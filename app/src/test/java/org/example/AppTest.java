@@ -64,6 +64,14 @@ class AppTest {
     
   }
 
+  @Test
+  void clearOne()
+  {
+    one.clear();
+    assertEquals(one.all().size(), 0);
+
+  }
+
   TodoList two;
 
   @BeforeEach
@@ -102,6 +110,14 @@ class AppTest {
     check.add("C");
     assertEquals(two.incomplete(), check);
     
+  }
+
+  @Test
+  void clearTwo()
+  {
+    two.clear();
+    assertEquals(two.all().size(), 0);
+
   }
 
   TodoList five;
@@ -158,6 +174,14 @@ class AppTest {
     check.add("G");
     assertEquals(five.incomplete(), check);
     
+  }
+
+  @Test
+  void clearFive()
+  {
+    five.clear();
+    assertEquals(five.all().size(), 0);
+
   }
 
 

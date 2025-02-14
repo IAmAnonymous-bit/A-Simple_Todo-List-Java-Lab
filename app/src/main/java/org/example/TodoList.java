@@ -74,4 +74,12 @@ public class TodoList
 
     }
 
+    public void clear()
+    {
+        while(list.size() > 0)
+        {
+            list.remove(0);
+        }
+    }
+
 }
